@@ -1,0 +1,27 @@
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  transition: opacity 0.3s ease-out;
+}
+
+.movies-list.fade-out {
+  opacity: 0;
+}
+
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.movie-link:hover .movie-card {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

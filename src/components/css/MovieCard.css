@@ -1,0 +1,29 @@
+.movie-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.movie-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card__content {
+  padding: 1rem;
+}
+
+.movie-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.movie-card__date {
+  color: #718096;
+}
