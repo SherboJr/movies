@@ -1,5 +1,4 @@
-// src/api.ts
-
+// here we define the types for the movieDetails object
 interface MovieDetail {
   adult: boolean;
   backdrop_path: string;
@@ -50,11 +49,11 @@ interface MovieDetail {
 }
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
-
+//this ensures that the api key is available
 if (!API_KEY) {
   throw new Error("Missing TMDB API Key in environment variables");
 }
-
+//the function accepts a movie id as a string parameter
 export const fetchMovieDetails = async (id: string): Promise<MovieDetail> => {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`

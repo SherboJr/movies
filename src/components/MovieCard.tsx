@@ -1,11 +1,15 @@
 import React from "react";
 import "./css/MovieCard.css";
+
+//here we  define or specify the types of props the MovieCard component expects to receive.
 interface MovieCardProps {
   posterPath: string;
   title: string;
   releaseDate: string;
 }
-
+// and here we declare our movie card component which to be honest we do not really need it
+// then why did i create it you may ask to facilitate styling the movie containers in the home screen
+// i tried removing this component at first and styling from the moviesList component itself but it did not feel right code wise
 const MovieCard: React.FC<MovieCardProps> = ({
   posterPath,
   title,
